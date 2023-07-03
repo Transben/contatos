@@ -141,7 +141,7 @@ router.get('/pesquisar/pesquisar', (req, res, next) => {
 });
 
 // Rota POST para adicionar um novo contato
-router.post('/', (req, res, next) => {
+router.post('/adicionar', (req, res, next) => {
   const { nomeCompleto, telefone, email, setor, info, image } = req.body;
 
   // Realizar a lógica para adicionar os dados do contato ao banco de dados
